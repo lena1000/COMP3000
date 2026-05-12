@@ -34,3 +34,8 @@ Total misclassified Images: 2,244 images
 Images Misclassified by All models: 138 images  
 Images Misclassified by only Custom model: 641 images  
 Images Misclassified by only Pre-trained models: 249 images
+
+## Limitations
+- A fixed learning rate was used across all models, which, in handsight, was too high for the pre-trained models and likely is the reason for the large validation-to-test accuracy drops explained in the report.
+- Pre-trained models were run for 35 epochs, while the custom model was run for 70
+- Test set of images contains some with unrealistic editing and even duplicated, making some clssifications and results unfair
